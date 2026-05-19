@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp Files
+*.tmp
+*.log
+*.bak
+
+# Output Data
+*.xlsx
+*.csv
+scraped_data/
+
+# Video/Image outputs
+*.avi
+*.mp4
+*.mkv
+output/
+LAN_Shared_Uploads/
+Chat_Media/
+
+# Config files with potential secrets
+turboftp_config.json

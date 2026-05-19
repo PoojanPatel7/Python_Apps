@@ -1,0 +1,4 @@
+customtkinter
+flask
+qrcode
+Pillow
