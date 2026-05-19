@@ -167,10 +167,16 @@ APPS = [
 class AppLauncher(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("ALL Python Apps — Launcher")
+        self.title("Poojan's App")
         self.geometry("1100x750")
         self.minsize(900, 600)
         self.configure(bg=C["bg"])
+        
+        try:
+            self.iconphoto(False, tk.PhotoImage(file=os.path.join(BASE_DIR, "icon.png")))
+        except Exception:
+            pass
+
         self.running = {}  # Track running processes
 
         self._build_header()
@@ -196,7 +202,7 @@ class AppLauncher(tk.Tk):
         title_frame = tk.Frame(inner, bg=C["bg2"])
         title_frame.pack(side="left")
 
-        tk.Label(title_frame, text="ALL Python Apps",
+        tk.Label(title_frame, text="Poojan's App",
                  font=("Segoe UI", 22, "bold"),
                  bg=C["bg2"], fg=C["text"]).pack(anchor="w")
 
